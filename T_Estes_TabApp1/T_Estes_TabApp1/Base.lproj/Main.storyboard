@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XbI-0A-yAL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="T_Estes_TabApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collie.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="lpm-bp-b8h">
+                                <rect key="frame" x="20" y="220" width="374" height="543"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfN-oc-YbE">
+                                <rect key="frame" x="20" y="79" width="374" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.8629911039" blue="0.98339668530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-dog-50 (1).png" id="oTt-KV-h2N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="105.80357142857143"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="n1R-Vt-2XG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XbI-0A-yAL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ppw-7r-vcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hLT-Mi-Yre"/>
+                        <segue destination="bYq-k0-VBP" kind="relationship" relationship="viewControllers" id="arG-6i-pCp"/>
+                        <segue destination="9bz-JH-uAP" kind="relationship" relationship="viewControllers" id="cQY-Ph-6Ke"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0R2-zQ-cbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328" y="106"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4zk-Nb-x27">
+            <objects>
+                <viewController id="bYq-k0-VBP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMi-hn-EO4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainecoon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HJy-Wh-Eaj">
+                                <rect key="frame" x="20" y="225" width="374" height="549"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUL-31-t91">
+                                <rect key="frame" x="20" y="77" width="374" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87727507984794506" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5ny-Rg-rev"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-cat-50.png" id="7oH-9q-54h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTF-EK-nXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779.7101449275365" y="105.80357142857143"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Qg3-DC-C0Y">
+            <objects>
+                <viewController id="9bz-JH-uAP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YZB-80-UnW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Palomino.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Z7k-tJ-0cl">
+                                <rect key="frame" x="20" y="220" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-Pt-GY1">
+                                <rect key="frame" x="20" y="69" width="374" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91860723495483398" green="0.98456615209579468" blue="0.78822499513626099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wcR-Nu-7HE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-horse-50.png" id="XWv-jg-eT6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngr-zD-MUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2478.2608695652175" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Palomino.jpeg" width="177" height="285"/>
+        <image name="collie.jpeg" width="263" height="191"/>
+        <image name="icons8-cat-50.png" width="50" height="50"/>
+        <image name="icons8-dog-50 (1).png" width="50" height="50"/>
+        <image name="icons8-horse-50.png" width="50" height="50"/>
+        <image name="mainecoon.jpeg" width="201" height="251"/>
+    </resources>
+</document>
